@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(106, 181, 89);
+  /* color: rgb(26, 164, 26); */
+}
+
+/* container for whole page */
+.container {
+  width: 90%;
+  margin: auto;
+  height: 100vh;
+  /* border: 2px solid red; */
+  /* border: 2px solid green; */
+}
+
+.inner-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* add form ////////////////////////// */
+/* add form box////////////////// */
+.input-details {
+  /* border: 2px solid blue; */
+  /* width: 500px; */
+  margin: auto;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  background-color: rgba(0, 0, 0, 0.422);
+  box-shadow: 0 0 3px 1px rgb(72, 72, 72);
+}
+
+/* form heading ///////////////////////////*/
+.input-details h3 {
+  text-align: center;
+  /* margin: 5px 0; */
+  margin-bottom: 5px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* form /////////////////////////////////// */
+.input-details form {
+  /* border: 2px solid yellow; */
+  width: 90%;
+  margin: auto;
+}
+
+/* input field and labels/////////////////////// */
+.input-details form label {
+  width: 37%;
+  margin: 5px 0;
+  display: -webkit-inline-box;
+}
+
+.input-details input {
+  width: 60%;
+  height: 1.4rem;
+  margin: 5px 0;
+  color: white;
+  /* padding-left: 5px; */
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.input-details input[type="text"] {
+  width: 58%;
+  padding-left: 5px;
+}
+
+.input-details input::placeholder {
+  color: rgb(179, 177, 177);
+}
+
+/* submit btn/////////////////////////////// */
+.btn {
+  width: 70px;
+  height: 1.4rem;
+  border-radius: 5px;
+  background-color: rgb(71, 71, 71);
+  color: white;
+  margin-top: 5px;
+}
+
+/* search bar box/////////////////////////////////// */
+.search-bar {
+  /* border: 2px solid blue; */
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* search input/////////////////////////////////////// */
+.search-bar input {
+  border-radius: 3px;
+  /* width: 60%; */
+  height: 1.7rem;
+  /* margin: 3px 0; */
+  color: white;
+  padding-left: 5px;
+  font-weight: bold;
+  background-color: rgba(62, 60, 60, 0.726);
+}
+
+.search-bar input::placeholder {
+  /* padding-left: 5px; */
+  color: rgb(188, 185, 185);
+}
+
+/* data list box/////////////////////////////////// */
+.list-box {
+  margin: auto;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  text-align: center;
+  height: 320px;
+}
+
+.list-box h1 {
+  font-size: 1.5rem;
+  height: 30px;
+  padding-top: 10px;
+  /* padding-bottom: 5px; */
+  background-color: rgba(0, 0, 0, 0.422);
+  border-bottom: 2px solid black;
+}
+
+#list-details {
+  overflow-y: auto;
+  height: 89%;
+  /* display: block; */
+  /* border: 2px solid saddlebrown; */
+}
+
+#list-details::-webkit-scrollbar {
+  display: none;
+}
+
+#list-details ol {
+  list-style-position: inside;
+  margin: 16px 0;
+}
+
+#list-details li {
+  width: 200px;
+  margin: 6px auto;
+  font-size: 1.1rem;
+  padding: 5px 0;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.422);
+  box-shadow: 0 0 2px 1px black;
+}
+
+#list-details li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* media for 479px///////////////// */
+@media screen and (min-width: 479px) {
+  /* add form ////////////////////////// */
+  /* add form box////////////////// */
+  .container {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* add form ////////////////////////// */
+  /* add form box////////////////// */
+  .container {
+    width: 60%;
+    /* border: 2px solid yellow; */
+  }
+
+  .inner-container {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  /* add form ////////////////////////// */
+  /* add form box////////////////// */
+  .input-details {
+    /* width: 80%; */
+    padding-bottom: 30px;
+    padding-top: 15px;
+  }
+
+  /* form heading /////////////////*/
+  .input-details h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+  }
+
+  /* form /////////////////////////////////// */
+  .input-details form {
+    /* border: 2px solid yellow; */
+    width: 80%;
+  }
+
+  /* input field and labels/////////////////////// */
+  .input-details form label {
+    margin: 8px 0;
+    font-size: 1.1rem;
+  }
+
+  .input-details input {
+    margin: 8px 0;
+  }
+
+  /* search bar box/////////////////////////////////// */
+  .search-bar {
+    /* border: 2px solid blue; */
+    margin-bottom: 30px;
+    margin-top: 30px;
+    /* text-align: center; */
+  }
+
+  /* data list box/////////////////////////////////// */
+  .list-box {
+    height: 350px;
+  }
+
+  .list-box h1 {
+    height: 36px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .input-details {
+    width: 80%;
+  }
+
+  .input-details form {
+    /* border: 2px solid yellow; */
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .page-number {
+    width: 80%;
+    margin: auto;
+  }
+  .input-details {
+    /* border: 2px solid blue; */
+    width: 70%;
+  }
+
+  .input-details form {
+    /* border: 2px solid yellow; */
+    width: 70%;
+    margin: auto;
+  }
+
+  /* data list box/////////////////////////////////// */
+  .list-box {
+    height: 400px;
+    width: 80%;
+  }
+}
